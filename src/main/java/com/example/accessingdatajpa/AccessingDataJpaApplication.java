@@ -13,12 +13,12 @@ import org.springframework.context.annotation.Bean;
 @EntityScan(basePackages = "addressBook")
 public class AccessingDataJpaApplication {
     private static final Logger log = LoggerFactory.getLogger(AccessingDataJpaApplication.class);
-
+/*
     public static void main(String[] args) {
         System.out.println("CP 1");
         SpringApplication.run(AccessingDataJpaApplication.class, args);
     }
-
+*/
     /*
     @Bean
     public CommandLineRunner demo(AddressBookRepository repository) {
