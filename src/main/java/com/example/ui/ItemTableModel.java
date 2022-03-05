@@ -33,7 +33,7 @@ public class ItemTableModel extends AbstractTableModel {
         this.itemList = itemList;
         this.addressBook = new AddressBook();
         for(List<Object> buddy: itemList) {
-            BuddyInfo buddyInfo = new BuddyInfo((String) buddy.get(0), (String) buddy.get(1));
+            BuddyInfo buddyInfo = new BuddyInfo((String) buddy.get(0), (String) buddy.get(1), "townsville");
             this.addressBook.addBuddy(buddyInfo);
         }
     }
@@ -47,14 +47,14 @@ public class ItemTableModel extends AbstractTableModel {
             case(0):
                 this.itemList.get(rowIndex).set(columnIndex, value);
                 if(rowIndex >= addressBook.getNumBuddies()) {
-                    this.addressBook.addBuddy(new BuddyInfo("", ""));
+                    this.addressBook.addBuddy(new BuddyInfo("", "", ""));
                 }
                 this.addressBook.getBuddyAtIndex(rowIndex).setName((String) value);
                 break;
             case(1):
                 this.itemList.get(rowIndex).set(columnIndex, value);
                 if(rowIndex >= addressBook.getNumBuddies()) {
-                    this.addressBook.addBuddy(new BuddyInfo("", ""));
+                    this.addressBook.addBuddy(new BuddyInfo("", "", ""));
                 }
                 this.addressBook.getBuddyAtIndex(rowIndex).setPhoneNumber((String) value);
                 break;

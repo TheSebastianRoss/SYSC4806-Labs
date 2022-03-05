@@ -10,15 +10,17 @@ public class BuddyInfo {
     private Long id;
     private String name;
     private String phoneNumber;
+    private String address;
     private String content;
 
-    public BuddyInfo(String name, String phoneNumber) {
+    public BuddyInfo(String name, String phoneNumber, String address) {
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     public BuddyInfo() { // default constructor required
-        this("", "");
+        this("", "", "");
     }
 
     public Long getId() {
@@ -59,6 +61,14 @@ public class BuddyInfo {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
 

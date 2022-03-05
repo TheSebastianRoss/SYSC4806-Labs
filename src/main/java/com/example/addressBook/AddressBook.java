@@ -56,10 +56,10 @@ public class AddressBook {
 
     public static void main(String[] args) {
         AddressBook myFriends = new AddressBook();
-        BuddyInfo buddy1 = new BuddyInfo("Wyatt Mason", "424-555-5425");
-        BuddyInfo buddy2 = new BuddyInfo("Lee Davenport", "424-555-6786");
-        BuddyInfo buddy3 = new BuddyInfo("Taiga Quitter", "424-555-6389");
-        BuddyInfo buddy4 = new BuddyInfo("Wanda Pothos", "424-555-7836");
+        BuddyInfo buddy1 = new BuddyInfo("Wyatt Mason", "424-555-5425", "townsville");
+        BuddyInfo buddy2 = new BuddyInfo("Lee Davenport", "424-555-6786", "townsville");
+        BuddyInfo buddy3 = new BuddyInfo("Taiga Quitter", "424-555-6389", "townsville");
+        BuddyInfo buddy4 = new BuddyInfo("Wanda Pothos", "424-555-7836", "townsville");
 
         myFriends.addBuddy(buddy1);
         myFriends.addBuddy(buddy2);

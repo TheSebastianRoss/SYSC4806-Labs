@@ -75,11 +75,11 @@ public class AccessingDataJpaApplication {
     public CommandLineRunner demo(BuddyInfoRepository repository) {
         return (args) -> {
             // save a few buddies
-            repository.save(new BuddyInfo("Wyatt Mason", "123"));
-            repository.save(new BuddyInfo("Jaylen Hotdogfingers", "14"));
-            repository.save(new BuddyInfo("Wyatt Mason", "456"));
-            repository.save(new BuddyInfo("Parker MacMillan", "1"));
-            repository.save(new BuddyInfo("Chorby Soul", "14"));
+            repository.save(new BuddyInfo("Wyatt Mason", "123", "townsville"));
+            repository.save(new BuddyInfo("Jaylen Hotdogfingers", "14", "townsville"));
+            repository.save(new BuddyInfo("Wyatt Mason", "456", "townsville"));
+            repository.save(new BuddyInfo("Parker MacMillan", "1", "townsville"));
+            repository.save(new BuddyInfo("Chorby Soul", "14", "townsville"));
 
             // fetch all buddies
             log.info("Buddies found with findAll():");
